@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  max-width: 144rem;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  background-color: hsl(0, 0%, 8%);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 38.4rem;
+  height: 61rem;
+  margin-top: 17.5rem;
+  padding: 4rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  background-color: hsl(0, 0%, 12%);
+}
+
+header img {
+  max-width: 100%;
+  width: 8.9rem;
+  height: 8.9rem;
+  border-radius: 50%;
+}
+
+header h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 2.4rem;
+  margin-top: 2.3rem;
+  font-weight: 600;
+}
+
+p.location {
+  margin-top: 0.9rem;
+  margin-bottom: 2.8rem;
+  color: hsl(75, 94%, 57%);
+  font-weight: 700;
+}
+
+p.description {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  color: hsl(0, 0%, 100%);
+  display: block;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  background-color: hsl(0, 0%, 20%);
+  margin-bottom: 1.4rem;
+  transition: 0.5s;
+  font-weight: 600;
+}
+
+ul li a:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 12%);
+}
+
+ul li a.last-child {
+  margin-bottom: 0;
+}
+
+/* media queries */
+@media only screen and (max-width: 375px) {
+  .card {
+    margin-top: 11.5rem;
+  }
+}
